@@ -1,0 +1,73 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  height: 225px;
+  width: 225px;
+  border: 1px solid $black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 6px 15px rgba($black, 0.2);
+  color: black;
+  &:hover {
+    .nameWrapper {
+      height: 100%;
+      background-color: rgba($dark, 0.8);
+    }
+    .name,
+    .info {
+      color: $yellow;
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nameWrapper {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba($dark, 0.3);
+  transition: all 0.3s;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  transition: all 0.3s;
+  color: white;
+}
+
+.info {
+  transition: all 0.3s;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  color: white;
+}
+
+.role {
+  font-size: 15px;
+  text-align: center;
+}

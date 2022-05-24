@@ -1,0 +1,67 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  margin-bottom: 140px;
+}
+
+.title {
+  font-size: 75px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+.category {
+  margin-bottom: 60px;
+  &:nth-child(2n - 1) {
+    .categoryTitle {
+      text-align: end;
+    }
+    .categoryContainer {
+      justify-content: end;
+    }
+    .categoryLink {
+      &:nth-child(4n),
+      &:nth-child(4n - 1) {
+        transform: translateX(calc(-50% + 20px));
+      }
+    }
+  }
+}
+
+.categoryTitle {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: bold;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: $ukrainianFlag2;
+    margin-top: -10px;
+  }
+}
+
+.categoryContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoryLink {
+  position: relative;
+  border: 2px solid rgba($dark, 0.5);
+  padding: 30px 0px;
+  width: 40%;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark;
+  background-color: white;
+  text-align: center;
+  &:nth-child(4n),
+  &:nth-child(4n - 1) {
+    transform: translateX(calc(50% - 20px));
+  }
+}

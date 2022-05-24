@@ -1,0 +1,32 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  margin: 0 175px;
+  margin-bottom: 120px;
+}
+
+.title {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin: 0 0 -20px 0;
+  &_top {
+    margin-top: 100px;
+  }
+  &_bottom {
+    text-align: right;
+  }
+}
+
+.blue {
+  color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.divider {
+  height: 40px;
+  width: 100%;
+  background-image: $ukrainianFlag2;
+}

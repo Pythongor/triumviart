@@ -1,0 +1,55 @@
+@import "~assets/styles/constants.scss";
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 50px;
+  z-index: 10;
+  width: 500px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.label {
+  font-size: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+.input {
+  display: block;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid $gray;
+  width: 100%;
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 30px;
+}
+
+.form .buttons {
+  margin-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 280px;
+}
+
+.button {
+  width: initial;
+  flex: 1
+}

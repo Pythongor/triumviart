@@ -1,0 +1,45 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  border: 5px solid $dark;
+  padding: 40px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: white;
+  margin-bottom: 110px;
+}
+
+.content {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.link {
+  margin-top: auto;
+}
+
+.imageWrapper {
+  min-width: #{"min(35%, 300px)"};
+  height: 100%;
+  margin-left: 50px;
+}
+
+.image {
+  width: 100%;
+  height: fit-content;
+}

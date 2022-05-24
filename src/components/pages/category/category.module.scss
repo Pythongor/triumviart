@@ -1,0 +1,17 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.button {
+  display: block;
+  margin: 110px auto 0 auto;
+}
+
+.yellow {
+  color: $yellow;
+}

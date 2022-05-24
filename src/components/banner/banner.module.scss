@@ -1,0 +1,13 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  position: relative;
+  margin-top: 94px;
+  width: 100%;
+  min-height: 374px;
+  background-image: url("~assets/images/banner.png");
+  // background-image: ;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 5px solid $dark;
+}
