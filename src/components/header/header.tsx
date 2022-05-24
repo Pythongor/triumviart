@@ -27,9 +27,9 @@ const Header: React.FC<StateProps & DispatchProps> = ({
         <Link to="/" className={styles.link}>
           Home
         </Link>
-        <button className={styles.link} onClick={() => setModal("donate")}>
+        <div className={styles.link} onClick={() => setModal("donate")}>
           Donate
-        </button>
+        </div>
         <Link to="/contact" className={styles.link}>
           Contact us
         </Link>
